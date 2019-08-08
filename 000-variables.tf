@@ -18,3 +18,7 @@ variable iks_private_vlan_id {
   description = "IKS Private VLAN ID"
   default     = ""
 }
+variable datacenter {
+  description = "IBM datacenter code"
+  default     = ""
+}
