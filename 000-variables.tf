@@ -1,12 +1,16 @@
-variable "iks_cluster" {
-  default = {
-    name                   = "iks_cluster"
-    machine_type           = "free"
-    default_pool_size      = 1
-  }
+variable iks_name {
+  description = "IKS Cluster name"
+  default     = "iks_cluster"
 }
-
-variable datacenter {
+variable iks_machine_type {
+  description = "Worker node machine type. Ex) free, u2c.2x4.encrypted"
+  default     = "free"
+}
+variable iks_default_pool_size {
   description = "IBM datacenter code"
-  default     = ""
+  default     = "dal13"
+}
+variable datacenter {
+  description = "IBM datacenter code. Ex) dal13, wdc04... "
+  default     = "dal13"
 }
