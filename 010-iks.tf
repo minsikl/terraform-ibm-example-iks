@@ -1,11 +1,11 @@
 resource "ibm_container_cluster" "iks_cluster" {
-  name                   = "${var.iks_cluster["name"]}"
-  machine_type           = "${var.iks_cluster["machine_type"]}"
+  name                   = "${var.iks_name}"
+  machine_type           = "${var.iks_machine_type}"
   datacenter             = "${var.datacenter}"
   hardware               = "shared"
-  default_pool_size      = "${var.iks_cluster["default_pool_size"]}"
-  public_vlan_id         = "${var.iks_cluster["public_vlan_id"]}"
-  private_vlan_id        = "${var.iks_cluster["private_vlan_id"]}"
+  default_pool_size      = "${var.iks_default_pool_size}"
+  public_vlan_id         = "${var.iks_public_vlan_id}"
+  private_vlan_id        = "${var.iks_private_vlan_id}"
 }
 
 data "ibm_container_cluster_config" "iks_cluster_config" {
