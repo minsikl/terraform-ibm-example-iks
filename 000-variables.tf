@@ -10,7 +10,11 @@ variable iks_default_pool_size {
   description = "IBM datacenter code"
   default     = "dal13"
 }
-variable datacenter {
-  description = "IBM datacenter code. Ex) dal13, wdc04... "
-  default     = "dal13"
+variable iks_public_vlan_id {
+  description = "IKS Public VLAN ID"
+  default     = ""
+}
+variable iks_private_vlan_id {
+  description = "IKS Private VLAN ID"
+  default     = ""
 }
