@@ -7,8 +7,8 @@ variable iks_machine_type {
   default     = "free"
 }
 variable iks_default_pool_size {
-  description = "IBM datacenter code"
-  default     = "dal13"
+  description = "Number of worker node"
+  default     = "1"
 }
 variable iks_public_vlan_id {
   description = "IKS Public VLAN ID"
@@ -19,6 +19,6 @@ variable iks_private_vlan_id {
   default     = ""
 }
 variable datacenter {
-  description = "IBM datacenter code"
-  default     = ""
+  description = "IBM datacenter code. Ex) dal11, wdc04"
+  default     = "dal13"
 }
